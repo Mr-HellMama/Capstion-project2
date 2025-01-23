@@ -42,28 +42,27 @@ body {
 }
 
 .header__profile {
-  width: 100%; /* Full width for better alignment */
+  width: 30%;
+  margin: auto;
+  padding-top: 3rem;
   text-align: center;
-  margin-top: 2rem; /* Add spacing above the profile image */
 }
 
 .header__profile-image {
-  width: 20vw; /* Relative size based on viewport width */
-  height: 20vw; /* Maintain aspect ratio */
-  max-width: 300px; /* Maximum size to prevent it from becoming too large */
-  min-width: 150px; /* Minimum size to prevent it from becoming too small */
-  border-radius: 50%; /* Circular shape */
-  object-fit: cover; /* Ensures the image covers the area */
-  border: 5px solid #4ecdc4; /* Light teal border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-bottom: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #4ecdc4; /* Light teal border for profile image */
 }
 
 .header__profile-info {
   font-size: 1.5rem;
   color: #2d4059; /* Dark blue-gray for text */
-  margin-top: 1rem;
 }
 
+/* Skills Section Styles */
 /* Skills Section Styles */
 .skills {
   padding: 80px 20px; /* Increased padding for better spacing */
@@ -103,6 +102,7 @@ body {
 }
 
 /* Footer Section Styles */
+/* Footer Styling */
 footer {
   background-color: #2d4059; /* Dark blue-gray for footer */
   color: #ffffff; /* White text */
@@ -146,22 +146,22 @@ footer {
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1200px) {
   .header__profile-image {
-    width: 25vw; /* Slightly larger on smaller screens */
-    height: 25vw;
+    height: 18rem;
+    width: 18rem;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .header__profile-image {
-    width: 30vw; /* Larger on tablets */
-    height: 30vw;
+    height: 15rem;
+    width: 15rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .header__profile-image {
-    width: 40vw; /* Larger on mobile devices */
-    height: 40vw;
+    height: 12rem;
+    width: 12rem;
   }
   .header__title {
     font-size: 3rem;
@@ -173,151 +173,21 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .header__profile-image {
-    width: 50vw; /* Largest on very small screens */
-    height: 50vw;
+    height: 10rem;
+    width: 10rem;
   }
   .header__title {
     font-size: 2.5rem;
   }
   .header__subtitle {
     font-size: 1.25rem;
-  }/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
-}
-
-body {
-  line-height: 1.6; /* Better readability */
-  color: #333333; /* Dark gray for text */
-}
-
-/* Header Section Styles */
-.header {
-  background: linear-gradient(
-    135deg,
-    #2d4059,
-    #4ecdc4
-  ); /* Gradient: dark blue-gray to light teal */
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff; /* White text */
-  text-align: center;
-  padding: 20px;
-}
-
-.header__title {
-  font-size: 4rem;
-  color: #ffffff; /* White for emphasis */
-  font-weight: 700; /* Bold title */
-  margin-bottom: 10px;
-}
-
-.header__subtitle {
-  font-size: 2rem;
-  color: #f6f6f6; /* Light gray for contrast */
-  font-weight: 500; /* Medium weight for subtitle */
-}
-
-.header__profile {
-  width: 100%; /* Full width for better alignment */
-  text-align: center;
-  margin-top: 2rem; /* Add spacing above the profile image */
-}
-
-.header__profile-image {
-  width: 300px; /* Larger base size for PC screens */
-  height: 300px; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular shape */
-  object-fit: cover; /* Ensures the image covers the area */
-  border: 5px solid #4ecdc4; /* Light teal border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
-.header__profile-info {
-  font-size: 1.5rem;
-  color: #2d4059; /* Dark blue-gray for text */
-  margin-top: 1rem;
-}
-
-/* Skills Section Styles */
-.skills {
-  padding: 80px 20px; /* Increased padding for better spacing */
-  background-color: #f6f6f6; /* Light gray background */
-  text-align: center;
-}
-
-.skills__title {
-  font-size: 2.5rem;
-  color: #2d4059; /* Dark blue-gray for title */
-  font-weight: 700; /* Bold title */
-  margin-bottom: 2rem;
-}
-
-.skills__item {
-  margin-bottom: 40px; /* Increased margin for better spacing */
-}
-
-.skills__item-image {
-  width: 250px; /* Set a fixed width for the GIFs */
-  height: 250px; /* Set a fixed height for the GIFs */
-  object-fit: cover; /* Ensures the GIFs maintain their aspect ratio */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.skills__item-info {
-  font-size: 1.5rem;
-  color: #2d4059; /* Dark blue-gray for text */
-  margin-top: 1rem;
-}
-
-/* Utility Classes */
-.pro {
-  text-decoration: underline;
-  color: #4ecdc4; /* Light teal for emphasis */
-}
-
-/* Footer Section Styles */
-footer {
-  background-color: #2d4059; /* Dark blue-gray for footer */
-  color: #ffffff; /* White text */
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.footer-links a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: #ffffff; /* White text */
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: 2px solid #4ecdc4; /* Light teal border */
-  border-radius: 25px; /* Rounded corners */
-  padding: 8px 20px;
-}
-
-.footer-links a:hover {
-  background-color: #4ecdc4; /* Light teal background on hover */
-  color: #2d4059; /* Dark blue-gray text on hover */
-  transform: translateY(-2px); /* Slight lift effect */
-}
-
-#contact {
-  margin-top: 20px;
-  background-color: #4ecdc4; /* Light teal background */
-  border:
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .header__profile-image {
-    width: 60vw; /* Largest on very small screens */
-    height: 60vw;
+    height: 8rem;
+    width: 8rem;
   }
   .header__title {
     font-size: 2rem;
