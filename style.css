@@ -49,12 +49,13 @@ body {
 }
 
 .header__profile-image {
-  margin-bottom: 1.5rem;
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #4ecdc4; /* Light teal border for profile image */
+  width: 20%; /* Relative size based on container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover; /* Ensures the image covers the area */
+  border: 5px solid #4ecdc4; /* Light teal border */
+  max-width: 300px; /* Maximum size to prevent it from becoming too large */
+  min-width: 150px; /* Minimum size to prevent it from becoming too small */
 }
 
 .header__profile-info {
@@ -62,7 +63,6 @@ body {
   color: #2d4059; /* Dark blue-gray for text */
 }
 
-/* Skills Section Styles */
 /* Skills Section Styles */
 .skills {
   padding: 80px 20px; /* Increased padding for better spacing */
@@ -102,7 +102,6 @@ body {
 }
 
 /* Footer Section Styles */
-/* Footer Styling */
 footer {
   background-color: #2d4059; /* Dark blue-gray for footer */
   color: #ffffff; /* White text */
@@ -146,22 +145,19 @@ footer {
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1200px) {
   .header__profile-image {
-    height: 18rem;
-    width: 18rem;
+    width: 25%; /* Slightly larger on smaller screens */
   }
 }
 
 @media only screen and (max-width: 992px) {
   .header__profile-image {
-    height: 15rem;
-    width: 15rem;
+    width: 30%; /* Larger on tablets */
   }
 }
 
 @media only screen and (max-width: 768px) {
   .header__profile-image {
-    height: 12rem;
-    width: 12rem;
+    width: 40%; /* Larger on mobile devices */
   }
   .header__title {
     font-size: 3rem;
@@ -173,8 +169,7 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .header__profile-image {
-    height: 10rem;
-    width: 10rem;
+    width: 50%; /* Largest on very small screens */
   }
   .header__title {
     font-size: 2.5rem;
@@ -186,8 +181,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
   .header__profile-image {
-    height: 8rem;
-    width: 8rem;
+    width: 60%; /* Largest on very small screens */
   }
   .header__title {
     font-size: 2rem;
