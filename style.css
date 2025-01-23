@@ -42,25 +42,24 @@ body {
 }
 
 .header__profile {
-  width: 30%;
-  margin: auto;
-  padding-top: 3rem;
+  width: 100%; /* Full width for better alignment */
   text-align: center;
+  margin-top: 2rem; /* Add spacing above the profile image */
 }
 
 .header__profile-image {
-  width: 20%; /* Relative size based on container width */
-  height: auto; /* Maintain aspect ratio */
+  width: 200px; /* Fixed base size */
+  height: 200px; /* Fixed base size */
   border-radius: 50%; /* Circular shape */
   object-fit: cover; /* Ensures the image covers the area */
   border: 5px solid #4ecdc4; /* Light teal border */
-  max-width: 300px; /* Maximum size to prevent it from becoming too large */
-  min-width: 150px; /* Minimum size to prevent it from becoming too small */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .header__profile-info {
   font-size: 1.5rem;
   color: #2d4059; /* Dark blue-gray for text */
+  margin-top: 1rem;
 }
 
 /* Skills Section Styles */
@@ -145,19 +144,22 @@ footer {
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1200px) {
   .header__profile-image {
-    width: 25%; /* Slightly larger on smaller screens */
+    width: 220px; /* Slightly larger on large screens */
+    height: 220px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .header__profile-image {
-    width: 30%; /* Larger on tablets */
+    width: 240px; /* Larger on tablets */
+    height: 240px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .header__profile-image {
-    width: 40%; /* Larger on mobile devices */
+    width: 260px; /* Larger on mobile devices */
+    height: 260px;
   }
   .header__title {
     font-size: 3rem;
@@ -169,7 +171,8 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .header__profile-image {
-    width: 50%; /* Largest on very small screens */
+    width: 280px; /* Largest on very small screens */
+    height: 280px;
   }
   .header__title {
     font-size: 2.5rem;
@@ -181,7 +184,8 @@ footer {
 
 @media only screen and (max-width: 480px) {
   .header__profile-image {
-    width: 60%; /* Largest on very small screens */
+    width: 300px; /* Largest on very small screens */
+    height: 300px;
   }
   .header__title {
     font-size: 2rem;
