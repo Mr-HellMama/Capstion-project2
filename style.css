@@ -186,8 +186,8 @@ footer {
 
 @media only screen and (max-width: 480px) {
   .header__profile-image {
-    height: 8rem;
-    width: 8rem;
+    height: 10rem;
+    width: 10rem;
   }
   .header__title {
     font-size: 2rem;
